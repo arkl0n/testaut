@@ -1,0 +1,10 @@
+*** Variables ***
+| ${BROWSER} | firefox
+
+*** Settings ***
+| Library | Selenium2Library
+| Suite Teardown | Close all browsers
+
+*** Test Cases ***
+| Example
+| | Open browser | http://www.fnac.pt | ${BROWSER}
